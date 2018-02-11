@@ -229,6 +229,7 @@ ul li {
   h1 {
     font-size: 42px;
   }
+
   h2 {}
   h3 {
     font-size: 32px;
@@ -240,6 +241,11 @@ ul li {
   .navbar-brand {
     max-width: 10%;
   }
+
+  .header {
+    
+  }
+
   #album, #videos, #merch {
     background: #ffffff;
     color: #000000;
