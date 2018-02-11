@@ -163,7 +163,7 @@ hr.star-primary {
 .section-divider{
   border-bottom: 3px solid #8c8c8c;
   border-bottom-width: thin;
-  width: 50%;
+  width: 80%;
   margin: 0 auto 0 auto;
 }
 #album {
@@ -211,6 +211,11 @@ ul li {
     max-width: 100%;
   }
   */
+
+  bg-img{
+    background-size: contain;
+
+  }
   .container {
     padding: 70px 15px 70px 15px;
   }
