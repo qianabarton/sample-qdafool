@@ -207,6 +207,7 @@ ul li {
   */
   .bg-img {
     background-attachment: scroll;
+    background-size: cover;
   }
   .container {
     padding: 70px 15px 70px 15px;
