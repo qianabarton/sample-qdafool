@@ -163,7 +163,7 @@ hr.star-primary {
 .section-divider{
   border-bottom: 3px solid #8c8c8c;
   border-bottom-width: thin;
-  width: 550px;
+  width: 50%;
   margin: 0 auto 0 auto;
 }
 #album {
@@ -182,7 +182,6 @@ ul li {
 #merch {
   background-color: #ffffff;
 }
-
 
 
 #merch ul li img {
@@ -219,34 +218,34 @@ ul li {
     padding: 115px 15px 115px 15px;
   }
   h1 {
-    font-size: 48px;
-  }
-  h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-  }
-  h3 {
     font-size: 42px;
   }
+
+  h2 {
+
+  }
+  h3 {
+    font-size: 32px;
+  }
   p, ul {
-    font-size: 19px;
+    font-size: 17px;
     font-weight: lighter;
   }
-  #album {
+
+  .navbar-brand{
+    max-width: 10%;
+  }
+  #album, #videos, #merch {
     background: #ffffff;
     color: #000000;
   }
 
-  #merch {
-    background-color: #ffffff;
-    color: #000000;
-  }
 
   #merch ul li img {
     max-width: 70%;
   }
-  #videos, #videos ul, #footer, #footer p {
+
+  #footer{
     color: #ffffff;
     background-color: #000000;
   }
