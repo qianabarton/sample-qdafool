@@ -214,7 +214,7 @@ ul li {
 
   bg-img{
     background-size: contain;
-
+    max-width: 20%;
   }
   .container {
     padding: 70px 15px 70px 15px;
