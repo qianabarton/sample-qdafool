@@ -1,0 +1,225 @@
+body {
+  background-color: #000000;
+}
+
+h1 {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 66px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+h1 span {
+  color: #ff9933;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-bottom: 2%;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: bold;
+}
+
+p, ul {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  color: #00cc99;
+}
+
+a:hover {
+  color: #ba4562;
+  text-decoration: none;
+}
+
+.app-image {
+  max-width: 100%;
+}
+
+.container-fluid {
+  padding: 70px 0 70px 0;
+}
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 10px;;
+  padding-right: 10px;
+
+}
+
+.bg-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background-image: url("../images/image-5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.overlay {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  z-index: 2;
+  background-color: rgb(33, 40, 45);
+  opacity: .8;
+}
+
+.header {
+  padding: 10% 0 10% 0;
+}
+
+
+
+a.btn, .btn {
+  border: 2px solid;
+  margin: 0 0 0 0;
+  border-radius: 0px;
+}
+
+.btn-no-fill {
+  color: #e67300;
+  border-color: #e67300 !important;
+  text-transform: uppercase;
+}
+
+.btn-no-fill:hover {
+  color: #ffffff;
+  background: #e67300;
+  border-color: #e67300;
+}
+
+.btn-fill {
+  color: #ffffff;
+  background: #e67300;
+  border-color: #e67300 !important;
+  text-transform: uppercase;
+}
+
+.btn-fill:hover {
+  color: #e67300;
+  background: #ffffff;
+  border-color: #e67300 !important;
+}
+
+.btn-large {
+  font-size: 17px;
+  padding: 12px 34px 12px 34px;
+}
+
+.navbar-brand{
+  max-width: 5%;
+}
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+#album {
+  background: #ffffff;
+}
+
+ul li {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+#videos {
+  color: #ffffff;
+  background-color: #b3b3b3;
+}
+
+#merch {
+  background-color: #ffffff;
+}
+
+
+
+#merch ul li img {
+  max-width: 85%;
+}
+
+#merch .social-media img {
+  max-width: 35px;
+}
+
+#footer {
+  color: #ffffff;
+}
+
+#footer img {
+  max-width: 40%;
+
+}
+
+
+@media(max-width:768px) {
+  /*
+  .overlay {
+    opacity: 1;
+    background: linear-gradient(to bottom right, #404040, #e67300);
+    height: auto;
+    max-width: 100%;
+  }
+  */
+  .container {
+    padding: 70px 15px 70px 15px;
+  }
+  .container-fluid {
+    padding: 115px 15px 115px 15px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 42px;
+  }
+  p, ul {
+    font-size: 19px;
+    font-weight: lighter;
+  }
+  #album {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  #merch {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  #merch ul li img {
+    max-width: 70%;
+  }
+  #videos, #videos ul, #footer, #footer p {
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+}
