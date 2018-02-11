@@ -27,6 +27,8 @@ h3 {
   font-size: 42px;
   font-weight: bold;
   text-transform: uppercase;
+  padding-bottom: 2%;
+
 }
 
 h4 {
@@ -80,6 +82,8 @@ a:hover {
   position: relative;
   max-width: 100%;
   height: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
   z-index: 2;
   background-color: rgb(33, 40, 45);
   opacity: .8;
@@ -132,11 +136,36 @@ a.btn, .btn {
 }
 
 .navbar {
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
+   padding-left: 30px;
+   padding-right: 30px;
 }
 
+
+
+.navbar a{
+  color: #ffffff;
+}
+hr.star-light, hr.star-primary {
+  max-width: 550px;
+  border: 0;
+  border-top: solid 1px;
+  text-align: center;
+}
+
+hr.star-light {
+  border-color: #ffffff;
+}
+
+hr.star-primary {
+  border-color: #8c8c8c;
+}
+
+.section-divider{
+  border-bottom: 3px solid #8c8c8c;
+  border-bottom-width: thin;
+  width: 550px;
+  margin: 0 auto 0 auto;
+}
 #album {
   background: #ffffff;
 }
@@ -146,8 +175,8 @@ ul li {
   padding-bottom: 25px;
 }
 #videos {
-  color: #ffffff;
-  background-color: #b3b3b3;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 #merch {
