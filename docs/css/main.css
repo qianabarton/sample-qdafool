@@ -70,7 +70,6 @@ a:hover {
 .bg-img {
   max-width: 100%;
   height: auto;
-  display: block;
   background-image: url("../images/image-5.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -212,10 +211,11 @@ ul li {
   }
   */
 
-  bg-img{
-    background-size: 2%;
-    max-width: 20%;
+  .bg-img {
+    background-size: 60% 50%;
+
   }
+
   .container {
     padding: 70px 15px 70px 15px;
   }
