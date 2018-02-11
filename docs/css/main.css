@@ -213,7 +213,7 @@ ul li {
   */
 
   bg-img{
-    background-size: contain;
+    background-size: 2%;
     max-width: 20%;
   }
   .container {
