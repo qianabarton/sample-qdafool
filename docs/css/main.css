@@ -1,6 +1,10 @@
 body {
   background-color: #000000;
+   padding-top: 0px !important;
 }
+
+
+/* ---> Fonts & Font Sizing <---------------------- */
 
 h1 {
   font-family: 'Open-Sans', sans-serif;
@@ -19,11 +23,10 @@ h2 {
   font-size: 25px;
   font-weight: 600;
   color: #ffffff;
-  padding-bottom: 2%;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 42px;
   font-weight: bold;
   text-transform: uppercase;
@@ -31,8 +34,8 @@ h3 {
 }
 
 h4 {
-  font-family: 'Open-Sans', sans-serif;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
 }
 
 p, ul {
@@ -41,30 +44,31 @@ p, ul {
   font-weight: bold;
 }
 
-a {
-  color: #00cc99;
-}
 
-a:hover {
-  color: #ba4562;
-  text-decoration: none;
-}
 
-.app-image {
-  max-width: 100%;
-}
 
-.container-fluid {
-  padding: 70px 0 70px 0;
-}
+/* ---> Container Spacing <------------------------ */
 
 .container {
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 10px;
-  ;
   padding-right: 10px;
 }
+
+.header {
+  padding: 15% 0 15% 0;
+}
+
+.section-divider {
+  border-bottom: 3px solid #8c8c8c;
+  border-bottom-width: thin;
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+
+/* ---> Image Sizing <------------------------- */
 
 .bg-img {
   max-width: 100%;
@@ -87,9 +91,43 @@ a:hover {
   opacity: .8;
 }
 
-.header {
-  padding: 10% 0 10% 0;
+.app-image {
+  max-width: 100%;
 }
+
+
+/* ---> Navbar <------------------------------ */
+
+.navbar-brand {
+  max-width: 5%;
+}
+
+.navbar {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: transparent;
+  color: white;
+}
+
+.navbar .nav-item .nav-link {
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+.navbar .nav-item .nav-link:hover{
+  color: #e67300;
+}
+
+
+.navbar.solid {
+  background-color: #000000;
+  transition: background-color 1s ease 0s;
+}
+
+
+
+
+/* ---> Button CSS <------------------------------ */
 
 a.btn, .btn {
   border: 2px solid;
@@ -127,46 +165,14 @@ a.btn, .btn {
   padding: 12px 34px 12px 34px;
 }
 
-.navbar-brand {
-  max-width: 5%;
-}
 
-.navbar {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.navbar a {
-  color: #ffffff;
-}
-
-hr.star-light, hr.star-primary {
-  max-width: 550px;
-  border: 0;
-  border-top: solid 1px;
-  text-align: center;
-}
-
-hr.star-light {
-  border-color: #ffffff;
-}
-
-hr.star-primary {
-  border-color: #8c8c8c;
-}
-
-.section-divider {
-  border-bottom: 3px solid #8c8c8c;
-  border-bottom-width: thin;
-  width: 80%;
-  margin: 0 auto 0 auto;
-}
+/* ---> Page Sections <------------------------------- */
 
 #album {
   background: #ffffff;
 }
 
-ul li {
+#album ul li, #merch ul li {
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -184,10 +190,6 @@ ul li {
   max-width: 85%;
 }
 
-#merch .social-media img {
-  max-width: 35px;
-}
-
 #footer {
   color: #ffffff;
 }
@@ -196,44 +198,51 @@ ul li {
   max-width: 40%;
 }
 
+
+
+/* ---> Mobile CSS <----------------------------------------------------------- */
+
 @media(max-width:768px) {
-  /*
-  .overlay {
-    opacity: 1;
-    background: linear-gradient(to bottom right, #404040, #e67300);
-    height: auto;
-    max-width: 100%;
-  }
-  */
-  .bg-img {
-    background-attachment: scroll;
-    background-size: cover;
-  }
-  .container {
-    padding: 70px 15px 70px 15px;
-  }
-  .container-fluid {
-    padding: 115px 15px 115px 15px;
-  }
+
+  /* ---> Font Size <----------------------------- */
+
   h1 {
     font-size: 42px;
   }
 
-  h2 {}
   h3 {
     font-size: 32px;
   }
+
   p, ul {
     font-size: 17px;
     font-weight: lighter;
   }
+
+  /* ---> Container & Image Sizing <---------------- */
+
+  .container {
+    padding: 70px 15px 70px 15px;
+  }
+
+  .header {
+    padding-top: 25%;
+    padding-bottom: 25%;
+    padding-left: 30px;
+  }
+
+  .bg-img {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  /* ---> Navbar<---------------------------------- */
+
   .navbar-brand {
     max-width: 10%;
   }
 
-  .header {
-    opacity: 1 !important;
-  }
+  /* ---> Page Sections <-------------------------- */
 
   #album, #videos, #merch {
     background: #ffffff;
@@ -246,4 +255,5 @@ ul li {
     color: #ffffff;
     background-color: #000000;
   }
+
 }
