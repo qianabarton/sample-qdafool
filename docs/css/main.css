@@ -1,6 +1,5 @@
 body {
   background-color: #000000;
-  padding-top: 0px !important;
 }
 
 /* ---> Fonts & Font Sizing <---------------------- */
@@ -110,10 +109,10 @@ p, ul {
 
 .navbar-nav .nav-item .nav-link {
   font-family: 'Roboto', sans-serif;
-  color: #ffffff;
+  color: #000000;
 }
 
-.navbar .nav-item .nav-link:hover {
+.navbar-nav .nav-item .nav-link:hover {
   color: #e67300;
 }
 
@@ -123,9 +122,10 @@ p, ul {
 }
 
 #side-menu {
-  background-color: #000000;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ffffff;
   position: fixed;
-  height: 400px;
+  height: 100%;
   width: 200px;
   top: 0px;
   right: 0px;
@@ -265,6 +265,7 @@ a.btn, .btn {
     background-size: cover;
     background-image: url("../images/image-5-mobile.png");
   }
+
   /* ---> Navbar<---------------------------------- */
   .navbar-brand {
     max-width: 10%;
