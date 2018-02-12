@@ -1,8 +1,7 @@
 body {
   background-color: #000000;
-   padding-top: 0px !important;
+  padding-top: 0px !important;
 }
-
 
 /* ---> Fonts & Font Sizing <---------------------- */
 
@@ -44,9 +43,6 @@ p, ul {
   font-weight: bold;
 }
 
-
-
-
 /* ---> Container Spacing <------------------------ */
 
 .container {
@@ -57,7 +53,7 @@ p, ul {
 }
 
 .header {
-  padding: 15% 0 15% 0;
+  padding: 20% 0 20% 0;
 }
 
 .section-divider {
@@ -66,7 +62,6 @@ p, ul {
   width: 80%;
   margin: 0 auto 0 auto;
 }
-
 
 /* ---> Image Sizing <------------------------- */
 
@@ -86,7 +81,7 @@ p, ul {
   height: auto;
   padding-top: 10%;
   padding-bottom: 10%;
-  z-index: 2;
+  z-index: 0;
   background-color: rgb(33, 40, 45);
   opacity: .8;
 }
@@ -94,7 +89,6 @@ p, ul {
 .app-image {
   max-width: 100%;
 }
-
 
 /* ---> Navbar <------------------------------ */
 
@@ -109,23 +103,69 @@ p, ul {
   color: white;
 }
 
-.navbar .nav-item .nav-link {
-  color: #ffffff;
-  font-weight: lighter;
+.navbar-nav {
+  padding-top: 15px;
+  padding-left: 30px;
 }
 
-.navbar .nav-item .nav-link:hover{
+.navbar-nav .nav-item .nav-link {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+.navbar .nav-item .nav-link:hover {
   color: #e67300;
 }
 
-
-.navbar.solid {
+.solid {
   background-color: #000000;
   transition: background-color 1s ease 0s;
 }
 
+#side-menu {
+  background-color: #000000;
+  position: fixed;
+  height: 400px;
+  width: 200px;
+  top: 0px;
+  right: 0px;
+  transition: all 0.3s linear;
+  -webkit-transform: translateX(200px);
+  -moz-transform: translateX(200px);
+  -ms-transform: translateX(200px);
+  -o-transform: translateX(200px);
+  transform: translateX(200px);
+  z-index: 3;
+}
 
+.sideMenuToggle {
+  -webkit-transform: translateX(0) !important;
+  -moz-transform: translateX(0) !important;
+  -ms-transform: translateX(0) !important;
+  -o-transform: translateX(0) !important;
+  transform: translateX(0) !important;
+}
 
+#slide-content {
+  transition: all 0.3s linear;
+  z-index: 3;
+}
+
+.slideOver {
+  -webkit-transform: translateX(-200px);
+  -moz-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  -o-transform: translateX(-200px);
+  transform: translateX(=200px);
+}
+
+#navbar {
+  transition: 0.3s linear;
+}
+
+.nav-slide {
+  margin: 0 200px 0 -200px;
+}
 
 /* ---> Button CSS <------------------------------ */
 
@@ -165,7 +205,6 @@ a.btn, .btn {
   padding: 12px 34px 12px 34px;
 }
 
-
 /* ---> Page Sections <------------------------------- */
 
 #album {
@@ -198,53 +237,39 @@ a.btn, .btn {
   max-width: 40%;
 }
 
-
-
 /* ---> Mobile CSS <----------------------------------------------------------- */
 
 @media(max-width:768px) {
-
   /* ---> Font Size <----------------------------- */
-
   h1 {
     font-size: 42px;
   }
-
   h3 {
     font-size: 32px;
   }
-
   p, ul {
     font-size: 17px;
     font-weight: lighter;
   }
-
   /* ---> Container & Image Sizing <---------------- */
-
   .container {
     padding: 70px 15px 70px 15px;
   }
-
   .header {
-    padding-top: 25%;
-    padding-bottom: 25%;
+    padding-top: 35%;
+    padding-bottom: 35%;
     padding-left: 30px;
   }
-
   .bg-img {
     background-attachment: scroll;
     background-size: cover;
     background-image: url("../images/image-5-mobile.png");
   }
-
   /* ---> Navbar<---------------------------------- */
-
   .navbar-brand {
     max-width: 10%;
   }
-
   /* ---> Page Sections <-------------------------- */
-
   #album, #videos, #merch {
     background: #ffffff;
     color: #000000;
@@ -256,5 +281,4 @@ a.btn, .btn {
     color: #ffffff;
     background-color: #000000;
   }
-
 }

@@ -20,111 +20,127 @@
 
 <body>
 
-  <!-- Nav Bar -->
-
-  <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+  <!-- Nav Bar Header -->
+  <div id="navbar" class="navbar navbar-dark navbar-expand-md fixed-top" role="navigation">
     <img href="#" class="navbar-brand d-flex mr-auto" src='images/rs-logo-white.png'></img>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="navbar-collapse collapse" id="collapsingNavbar3">
-      <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Bio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Merch</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Music</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Videos</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-
-
-  <!-- Header -->
-  <div class="bg-img">
-    <div class="overlay">
-      <div class="container header text-left">
-          <h1></h1>
-          <h1><span>No</span> Competition</h1>
-          <a class="btn btn-large btn-fill" href="#merch">Shop Now</a>
-      </div>
-    </div>
+    <button id="menu-toggle" class="navbar-toggler" type="button">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+    <ul class="nav navbar-nav ml-auto w-100 d-none d-md-flex justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Bio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Merch</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Music</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Videos</a>
+      </li>
+    </ul>
   </div>
 
-  <!-- Projects -->
-  <section id="album">
-    <div class="container text-center col-sm-8 col-sm-offset-2 col-10 col-offset-0">
-      <h3>Q Da Fool</h3>
-      <ul class="row list-unstyled justify-content-center">
-        <li class="list-item col-md-7">
-          <img class="app-image" src='images/no-competition.jpg'>
-        </li>
-        <li class="list-item col-md-5">
-          <h4>No Competition</h4>
-          <img class="app-image" src='images/apple-music.png'>
-        </li>
-      </ul>
-      <a class="btn btn-large btn-no-fill" href="#">Available Now</a>
-    </div>
-    <div class="section-divider"></div>
-  </section>
+  <!-- Off Canvas Nav Bar Links -->
+  <div id="side-menu">
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Bio</a>
+      </Li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Merch</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Music</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Videos</a>
+      </li>
+    </ul>
+  </div>
 
-  <!-- videos -->
-  <section id="videos">
-    <div class="container text-center col-sm-8 col-sm-offset-2 col-10 col-offset-0">
 
-      <h3>Drive For Us</h3>
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/OLTAObsy8xs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+  <div id="slide-content">
+
+    <!-- Header -->
+    <div class="bg-img">
+      <div class="overlay">
+        <div class="container header text-left">
+          <h1><span>No</span> Competition</h1>
+          <a class="btn btn-large btn-fill" href="#merch">Shop Now</a>
+        </div>
       </div>
     </div>
-    <div class="section-divider"></div>
 
-  </section>
+    <!-- Projects -->
+    <section id="album">
+      <div class="container text-center col-sm-8 col-sm-offset-2 col-10 col-offset-0">
+        <h3>Q Da Fool</h3>
+        <ul class="row list-unstyled justify-content-center">
+          <li class="list-item col-md-7">
+            <img class="app-image" src='images/no-competition.jpg'>
+          </li>
+          <li class="list-item col-md-5">
+            <h4>No Competition</h4>
+            <img class="app-image" src='images/apple-music.png'>
+          </li>
+        </ul>
+        <a class="btn btn-large btn-no-fill" href="#">Available Now</a>
+      </div>
+      <div class="section-divider"></div>
+    </section>
+
+    <!-- videos -->
+    <section id="videos">
+      <div class="container text-center col-sm-8 col-sm-offset-2 col-10 col-offset-0">
+
+        <h3>Drive For Us</h3>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/OLTAObsy8xs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="section-divider"></div>
+
+    </section>
 
 
-  <!-- merch -->
-  <section id="merch">
-    <div class="container text-center">
-      <h3>Exclusive Merchandise</h3>
-      <ul class="row list-unstyled justify-content-center">
-        <li class="list-item col-md-4">
-          <img src='images/shirt-1.png'></img>
-          <p>Rich Shootas T-Shirt</p>
-          <p>$25.00</p>
-          <a class="btn btn-large btn-fill" href="#">Add to cart</a>
-        </li>
-        <li class="list-item col-md-4">
-          <img src='images/shirt-2.png'></img>
-          <p>Rich Shootas T-Shirt - White</p>
-          <p>$25.00</p>
-          <a class="btn btn-large btn-fill" href="#">Add to cart</a>
-        </li>
-        <li class="list-item col-md-4">
-          <img src='images/shirt-3.png'></img>
-          <p>Rich Shootas T-Shirt - Black</p>
-          <p>$25.00</p>
-          <a class="btn btn-large btn-fill" href="#">Add to cart</a>
-        </li>
-      </ul>
+    <!-- merch -->
+    <section id="merch">
+      <div class="container text-center">
+        <h3>Exclusive Merchandise</h3>
+        <ul class="row list-unstyled justify-content-center">
+          <li class="list-item col-md-4">
+            <img src='images/shirt-1.png'></img>
+            <p>Rich Shootas T-Shirt</p>
+            <p>$25.00</p>
+            <a class="btn btn-large btn-fill" href="#">Add to cart</a>
+          </li>
+          <li class="list-item col-md-4">
+            <img src='images/shirt-2.png'></img>
+            <p>Rich Shootas T-Shirt - White</p>
+            <p>$25.00</p>
+            <a class="btn btn-large btn-fill" href="#">Add to cart</a>
+          </li>
+          <li class="list-item col-md-4">
+            <img src='images/shirt-3.png'></img>
+            <p>Rich Shootas T-Shirt - Black</p>
+            <p>$25.00</p>
+            <a class="btn btn-large btn-fill" href="#">Add to cart</a>
+          </li>
+        </ul>
 
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- footer -->
-  <section id="footer">
-    <div class="container text-center">
-      <img src='images/richshootas2.jpg'></img>
-    </div>
-  </section>
-
+    <!-- footer -->
+    <section id="footer">
+      <div class="container text-center">
+        <img src='images/richshootas2.jpg'></img>
+      </div>
+    </section>
+  </div>
 
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
   <script src="scripts/bootstrap.min.js"></script>
