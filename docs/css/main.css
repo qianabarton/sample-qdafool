@@ -234,6 +234,7 @@ a.btn, .btn {
   .bg-img {
     background-attachment: scroll;
     background-size: cover;
+    background-image: url("../images/image-5-mobile.png");
   }
 
   /* ---> Navbar<---------------------------------- */
