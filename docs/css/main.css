@@ -99,7 +99,7 @@ p, ul {
   padding-left: 30px;
   padding-right: 30px;
   background-color: transparent;
-  color: white;
+  color: #000000;
 }
 
 .navbar-nav {
@@ -109,7 +109,8 @@ p, ul {
 
 .navbar-nav .nav-item .nav-link {
   font-family: 'Roboto', sans-serif;
-  color: #000000;
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
