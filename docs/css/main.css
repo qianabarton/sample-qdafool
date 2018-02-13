@@ -99,7 +99,7 @@ p, ul {
   padding-left: 30px;
   padding-right: 30px;
   background-color: transparent;
-  color: #000000;
+  color: #ffffff;
 }
 
 .navbar-nav {
@@ -109,8 +109,8 @@ p, ul {
 
 .navbar-nav .nav-item .nav-link {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  color: #ffffff;
+  font-size: 24px;
+  color: #000000;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -124,7 +124,7 @@ p, ul {
 
 #side-menu {
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
-  background-color: #ffffff;
+  background-color: #000000;
   position: fixed;
   height: 100%;
   width: 200px;
